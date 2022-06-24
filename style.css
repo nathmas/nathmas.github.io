@@ -12,7 +12,8 @@
     background-position: center;
 }
 body{
- background-image: url(backround.jpeg);
+    background-image: linear-
+    gradient(rgba(0,0,0,0.75,), rgba(0,0,0,0.75,)),url(backround.jpeg);
     background-color: #cccccc;
     background-size: cover;
     background-position: center;
