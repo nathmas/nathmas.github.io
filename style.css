@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-sherif;
+}
+.banner{
+    width: 100%;
+    width: 100vh;
+    background-image: linear-
+    gradient(rgba(0,0,0,0.75,), rgba(0,0,0,0.75,)),url(backround.jpeg);
+    background-size: cover;
+    background-position: center;
+}
