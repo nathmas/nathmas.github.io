@@ -5,7 +5,7 @@
 }
 
 body{
- background: url(backround.jpeg)
+ background-image: url(backround.jpeg);
     background-color: #cccccc;
     background-size: cover;
     background-position: center;
