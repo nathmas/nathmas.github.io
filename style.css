@@ -12,8 +12,7 @@
     background-position: center;
 }
 body{
-    background-image: url(backround.jpeg);
-    filter: brightness(50%);
+ background-image: url(backround.jpeg);
     background-color: #cccccc;
     background-size: cover;
     background-position: center;
