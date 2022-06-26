@@ -80,7 +80,5 @@ border: none;
     position: fixed; right: 1px;
     bottom: 1px; width: 25px;
     height: 27px;
-    animation-name: appear;
-    animation-duration: 4s;
 }
 
