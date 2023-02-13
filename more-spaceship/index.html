@@ -1,59 +1,86 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>My Professional Website</title>
+    <title>More spaceship</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+     <link rel="icon" href="" type="image/x-icon" id="title_icon">
+  </head> 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis malesuada ex, id tincidunt metus tincidunt ut. Nunc et scelerisque erat. Proin non urna eget ante iaculis tincidunt. Sed blandit congue nulla, in feugiat diam ullamcorper et.</p>
-      </section>
-      <section id="services">
-        <h1>Our Services</h1>
-        <ul>
-          <li>Service 1</li>
-          <li>Service 2</li>
-          <li>Service 3</li>
-          <li>Service 4</li>
-        </ul>
-      </section>
-      <section id="portfolio">
-        <h1>Our Portfolio</h1>
-        <ul>
-          <li>Project 1</li>
-          <li>Project 2</li>
-          <li>Project 3</li>
-          <li>Project 4</li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h1>Contact Us</h1>
-        <form action="submit-form.php" method="post">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email">
-          <label for="message">Message:</label>
-          <textarea id="message" name="message"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-      </section>
-    </main>
-    <footer>
-      <p>Copyright &copy; 2023 My Professional Website</p>
-    </footer>
+<script>
+var ic1 = "https://vignette.wikia.nocookie.net/clubpenguin/images/b/b8/Dubstep.png/revision/latest?cb=20120711155730";
+var ic2 = "https://img.icons8.com/color/344/sonic-the-hedgehog-1.png";
+var ic3 = "https://img.icons8.com/color/344/bill-cipher.png";
+var ic4 = "https://img.icons8.com/stickers/2x/youtube.png";
+var ic5 = "https://img.icons8.com/stickers/2x/airport.png";
+var ic6 = "https://img.icons8.com/color/344/nickelodeon.png";
+var icc = 1;
+
+var inhtml = document.innerHTML
+var count = 0;
+function add_count() {
+    count += 1;
+    document.getElementById("secret_button").innerHTML = count;
+    if(count == 1000) {
+        alert(inhtml)
+    }
+}
+
+function switch_icon(icon) {
+    document.getElementById("title_icon").href = icon;
+}
+
+function next_ic() {
+    icc += 1
+    if(icc > 6){
+        icc = 1;
+    }
+    if(icc == 1) {
+        switch_icon(ic1);
+    }
+    if(icc == 2) {
+        switch_icon(ic2);
+    }
+    if(icc == 3) {
+        switch_icon(ic3);
+    }
+    if(icc == 4) {
+        switch_icon(ic4);
+    }
+    if(icc == 5) {
+        switch_icon(ic5);
+    }
+    if(icc == 6) {
+        switch_icon(ic6);
+    }
+}
+
+function lp1(){
+    lp2();
+}
+
+function lp2(){
+    next_ic();
+    setTimeout(lp1, 500);
+}
+lp1();
+</script>
+    <div class="banner">
+      <div class="content">
+        <h1 style="font-family:Arial">SPACESHIP</h1>
+        <p style="font-family:Arial">Yeah, I think he is in space.</p>
+        <div>
+          <center>
+                 <video width="300" controls>
+                   <source src="benny (2).mp4" type="video/mp4">
+                 </video>
+          </center>
+         
+         
+          <button type="button" style="font-family:Arial" onclick="window.location.href='https://nathmas.github.io/spaceship';"><span></span>BACK</button>
+         
+        </div>
+      </div>
+    </div>
+  
+  
   </body>
 </html>
